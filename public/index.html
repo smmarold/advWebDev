@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W1</title>
+</head>
+<body>
+    <h2>Welcome to my 1000th Node App </h2>
+
+    <script>
+        fetch('http://localhost:80/class/prof')
+        .then((response) => response.json())
+        .then((data) => {
+            var p = document.querySelector(`p`);
+            p.innerHTML = data.name;
+        });
+
+    </script>
+</body>
+</html>
